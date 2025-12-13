@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود به حساب کاربری</title>
+  <link rel="stylesheet" href="assets/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <!-- فرم لاگین (مخفی پیش‌فرض) -->
+  <div class="login-container" style="display:none;">
+    <div class="login-box">
+      <img src="images/logo-login.svg" alt="logo" class="img-fluid" style="width: 95px;"> <hr>
+      <h2>ورود به حساب کاربری</h2>
+      <form>
+        <div class="input-group">
+          <label for="username">ایمیل یا شماره موبایل</label>
+          <input type="text" id="username" placeholder="مثال: example@gmail.com" required>
+        </div>
+        <div class="input-group">
+          <label for="password">رمز عبور</label>
+          <input type="password" id="password" placeholder="********" required>
+        </div>
+        <button type="submit" class="login-btn1">ورود</button>
+        <p class="signup-text">حساب کاربری ندارید؟ <a href="#">ثبت نام کنید</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- لودینگ صفحه -->
+  <div id="loading-screen-two">
+    <div id="loading-text-login">
+      <img src="images/logo1.svg" alt="logo" style="width: 300px;" />
+    </div><br>
+    <div id="loading-dots-login"><br>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
